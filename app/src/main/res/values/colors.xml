@@ -4,8 +4,16 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorLightBlue">#8ec3e4</color>
+    <color name="colorGray">#dcdcdc</color>
 
 
     <color name="color_splash_background">#FFFFFF</color>
 
+
+    <color name="dialog_chesed_border_color">@color/colorAccent</color>
+    <color name="dialog_chesed_solid_color">@color/colorWhite</color>
+    <color name="dialog_chesed_title_solid_color">@color/colorPrimary</color>
+    <color name="dialog_chesed_button_solid_color">@color/colorLightBlue</color>
 </resources>
