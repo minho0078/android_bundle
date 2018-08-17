@@ -5,9 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.minho.bundle.util.dialog.ChesedCustomDialog;
+import com.transitionseverywhere.Rotate;
+import com.transitionseverywhere.TransitionManager;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,6 +37,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 chesedDialog.dismiss();
+
+                ViewGroup main_linearLayout = findViewById(R.id.main_linearLayout);
+                TransitionManager.beginDelayedTransition(main_linearLayout, new Rotate());
+                main_tv_user_network.setRotation(true ? 360 : 0);
             }
         });
         chesedDialog.setCanceledOnTouchOutside(false);
