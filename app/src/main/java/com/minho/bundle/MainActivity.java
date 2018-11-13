@@ -15,6 +15,7 @@ import com.transitionseverywhere.TransitionManager;
 public class MainActivity extends AppCompatActivity {
 
     private String TAG = "MainActivity";
+    
     private String user_network;
 
     private TextView main_tv_user_network;
